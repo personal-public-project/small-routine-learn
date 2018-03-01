@@ -1,100 +1,31 @@
 <!--index.wxml-->
-<view class="page">
-  <view class='page-section'>
-    <text>View Demo</text>
-  </view>
-
-  <!--行布局-->
-  <view class='page-section'>
-    <view>flex-direction : row</view>
-    <view style='display:flex;flex-direction:row;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
+<view class="container">
+    <view class="flex item">
+        <view class="item-left">
+            <image src="../images/wechatHL.png"></image>
+        </view>
+        <view class="item-middle">
+            <view>
+                <text class="title">标题</text>
+            </view>
+            <view>
+                <text class="sub-title">子标题</text>
+            </view>
+            <view>
+                <text class="actor">演员表</text>
+            </view>
+        </view>
+        <view class="item-right">
+            <view><text class="score">9.7分</text></view>
+            <view><text class="action">购票</text></view>
+        </view>
     </view>
-  </view>
 
-  <!--列布局-->
-  <view class='page-section'>
-    <view>flex-direction : column</view>
-    <view style='display:flex;flex-direction:column;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
+    <view class="flex item">
+        <view class="item-left">
+            <image src="https://www.baidu.com/img/bd_logo1.png"></image>
+        </view>
+        <view class="item-middle"></view>
+        <view class="item-right"></view>
     </view>
-  </view>
-
-  <!-- justify-content -->
-  <view class='page-section'>
-    <view>justify-content : flex-start</view>
-    <view style='display:flex;flex-direction:row;justify-content:flex-start;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <!-- justify-content -->
-  <view class='page-section'>
-    <view>justify-content : flex-end</view>
-    <view style='display:flex;flex-direction:row;justify-content:flex-end;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : center</view>
-    <view style='display:flex;flex-direction:row;justify-content:center;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : space-between</view>
-    <view style='display:flex;flex-direction:row;justify-content:space-between;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : space-around</view>
-    <view style='display:flex;flex-direction:row;justify-content:space-around;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : space-around</view>
-    <view style='display:flex;height:200px;flex-direction:row;justify-content:space-around;align-items:flex-start;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : space-around</view>
-    <view style='display:flex;height:200px;flex-direction:row;justify-content:space-around;align-items:flex-end;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
-
-  <view class='page-section'>
-    <view>justify-content : space-around</view>
-    <view style='display:flex;height:200px;flex-direction:row;justify-content:space-around;align-items:center;'>
-      <view class='flex-item bc_green'></view>
-      <view class='flex-item bc_red'></view>
-      <view class='flex-item bc_blue'></view>
-    </view>
-  </view>
 </view>

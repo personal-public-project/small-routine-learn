@@ -1,29 +1,60 @@
 /**index.wxss**/
-.page {
-	flex:1;
-	background-color:#ffff00;
-  font-size:16px;
-}
-.page-section {
-  padding: 10px;
-  background-color: #fffff0;
-  margin: 10px;
-  font-size: 16px;
+.flex {
+    display: flex;
 }
 
-.flex-item {
-  width: 100px;
-  height: 100px;
+.item {
+    padding: 10px;
+    background-color: #fff;
+    color: #787878;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
 }
 
-.bc_green {
-  background-color: #00ff00;
+.item image {
+    display: block;
+    width: 65px;
+    height: 95px;
 }
 
-.bc_red {
-  background-color: #ff0000;
+.item-middle {
+    flex: 1;
+    margin-left: 10px;
+    padding-top: 5px;
+    overflow: hidden;
 }
 
-.bc_blue {
-  background-color: #0000ff;
+.item-middle .title {
+    font-size: 16px;
+    color: #333;
+}
+
+.item-middle .sub-title {
+    font-size: 14px;
+    color: #666;
+    margin: 2px;
+}
+
+.item-middle .actor {
+    font-size: 14px;
+    color: #666;
+    margin: 2px;
+}
+
+.item-right {
+}
+
+.item-right .score {
+    font-size: 16px;
+    color: red;
+}
+
+.item-right .action {
+    display: inline-block;
+    padding: 2px 4px;
+    margin-top: 30px;
+    border: 1px solid #29cc6d;
+    color: #29cc6d;
+    font-size: 14px;
+    border-radius: 2px;
 }
