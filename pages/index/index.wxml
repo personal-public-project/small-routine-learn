@@ -1,31 +1,23 @@
 <!--index.wxml-->
-<view class="container">
-    <view class="flex item">
-        <view class="item-left">
-            <image src="../images/wechatHL.png"></image>
-        </view>
-        <view class="item-middle">
-            <view>
-                <text class="title">标题</text>
-            </view>
-            <view>
-                <text class="sub-title">子标题</text>
-            </view>
-            <view>
-                <text class="actor">演员表</text>
-            </view>
-        </view>
-        <view class="item-right">
-            <view><text class="score">9.7分</text></view>
-            <view><text class="action">购票</text></view>
-        </view>
-    </view>
+<viem class="container">
+    <view>{{message}}</view>
+    <view wx:for="{{array}}">{{item}}</view>
 
-    <view class="flex item">
-        <view class="item-left">
-            <image src="https://www.baidu.com/img/bd_logo1.png"></image>
-        </view>
-        <view class="item-middle"></view>
-        <view class="item-right"></view>
+    <view wx:if="{{view=='WEBVIEW'}}">WEBVIEW</view>
+    <view wx:elif="{{view=='APP'}}">APP</view>
+    <view wx:else="{{view=='MINA'}}">MINA</view>
+
+
+    <template is="qfName" data="{{...zhangsan}}"></template>
+    <template is="qfName" data="{{...lisi}}"></template>
+
+    <view bindtap="add" class="view-item">{{count}}</view>
+
+    <view hidden="{{false}}">jj</view>
+</viem>
+
+<template name="qfName">
+    <view>
+        姓名{{name}} 年龄{{age}}
     </view>
-</view>
+</template>
