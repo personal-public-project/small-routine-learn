@@ -1,5 +1,0 @@
-<view class="container">
-    <view>{{clickMsg}}</view>
-    <view class="view-item" bindtap="clickMe">点击view0</view>
-    <view class="view-item" bindtap="clickMe">点击view1</view>
-</view>
