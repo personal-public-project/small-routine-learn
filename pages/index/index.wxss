@@ -1,0 +1,35 @@
+.container{
+    height: 400px;
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    flex-flow:row nowrap;/*flex-direction与flex-wrap的缩写*/
+    justify-content: space-around;
+
+    align-items: flex-start;
+}
+
+.item{
+    width: 100rpx;
+    height: 100rpx;
+    background-color: rosybrown;
+    border:1px solid #fff;
+
+    /*flex-grow: 0;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: 200rpx;*/
+
+    flex:0 1 50rpx;/*flex-grow、lex-shrink、flex-basis的简写*/
+    order: 3;
+
+    align-self: flex-start;
+}
+
+.i3{
+    flex-basis: 200rpx;
+    order: 1;
+    align-self: flex-end;
+}

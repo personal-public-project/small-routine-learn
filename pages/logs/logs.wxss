@@ -1,0 +1,12 @@
+.container {
+    height: 400px;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.item {
+    width: 150rpx;
+    height: 150rpx;
+    background-color: rosybrown;
+    border: 1px solid #fff;
+}
