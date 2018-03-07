@@ -1,4 +1,4 @@
 <!--index.wxml-->
-<viem class="container">
-
-</viem>
+<view class="index-container">
+    <image src="/image/index.jpg"/>
+</view>

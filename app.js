@@ -1,2 +1,6 @@
 //app.js
-App({})
+App({
+    appData:{
+        userinfo:null
+    }
+})
