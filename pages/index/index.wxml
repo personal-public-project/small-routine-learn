@@ -1,4 +1,50 @@
 <!--index.wxml-->
-<viem class="container">
+<view class="container">
+    <view class="selection">
+        <swiper indicator-dots="{{true}}" autoplay='{{true}}' interval='{{3000}}' duration='{{1000}}'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" style="width: 100%;height: 100%;"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
 
-</viem>
+    <view class="selection">
+        <view class="header">
+            <text>精品推荐</text>
+            <text class="text-all">全部精品</text>
+        </view>
+
+        <view class="content">
+            <view class="content-item" wx:for="{{contentItems}}">
+                <image src="../../images/img1.png"/>
+                <view class="content-item-text">
+                    <text>这里是标题</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="selection">
+        <view class="header">
+            <text>热门评测</text>
+            <text class="text-all">全部评测</text>
+        </view>
+
+        <view class="list-item" wx:for="{{listItems}}">
+            <view class="list-item-images">
+                <image src="../../images/img2.png" class="list-item-images-img"/>
+                <image src="../../images/avatar.png" class="avatar"/>
+            </view>
+            <view class="list-item-text">
+                <view class="list-item-text-title">
+                    <text>看看接口连接</text>
+                </view>
+                <view class="list-item-text-content">
+                    <text>黑龙江家户口本包括港口进口航空哪里哪里了呢可很快就会看看了很快乐很困惑</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
